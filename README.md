@@ -1,3 +1,4 @@
 # Sass Environment
-a basic setup using gulp-sass 
-![site.png](/images/site.png)
+a basic setup for **gulp-sass** 
+
+![](/images/site.png)
