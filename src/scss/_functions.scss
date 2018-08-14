@@ -1,0 +1,8 @@
+//functions 
+@function set-txt-clr($bg_color){
+    @if(lightness($bg_color)>50){
+        @return $blk; 
+    }@else{
+        @return $wht;
+    }
+}

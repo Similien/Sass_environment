@@ -1,0 +1,80 @@
+@import 'variables';
+@import 'functions';
+
+*{
+   margin:0;
+   padding:0 ; 
+}
+body{
+    background: $body_bg;
+    font-family: $main_font;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: $drk_clr_gry;
+}
+.wrap{
+    max-width:$dsk_top ;
+    margin: auto;
+    padding: 0px 20px;
+}
+header#main_header{
+    padding: 2.5em;
+    background: $prime_clr;
+    color:set-txt-clr($blk);
+    h1{
+        font-size: 40px;
+    }
+}
+nav#mainNav{
+    background: $sec_clr;
+    height: 40px;
+    //margin-bottom: 5px;
+    ul{
+        list-style-type: none;
+        padding-top: 10px;
+    }
+    li{
+        display: inline;
+    }
+    a{
+        color: $wht;
+        padding-right: 20px;
+        &:hover{
+            color:$blk;
+        }
+    }
+}
+.section{   
+    padding:$section_padd;
+    h1{
+        margin-bottom: 30px;
+    }
+}
+//extend feature
+#section_a{
+    @extend .section;
+    background: $lgt_clr_gry;
+    color:set-txt-clr($wht);
+}    
+#section_b{
+    @extend .section;
+    background: $drk_clr_gry;
+    color: set-txt-clr($drk_clr_gry);
+}
+.button{
+    padding: 10px 15px;
+}
+.btn_a{
+    @extend .button;
+    background: darken($prime_clr, 10%);
+    color: set-txt-clr($blk);
+    &:hover{color:set-txt-clr($lgt_clr_gry)}
+}
+.btn_b{
+    @extend .button;
+    background: lighten($sec_clr, 1%);
+    color: set-txt-clr($blk);
+    &:hover{color:set-txt-clr($lgt_clr_gry)}
+}
