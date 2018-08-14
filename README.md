@@ -1,5 +1,5 @@
 # Sass Environment
-<hr>
+<hr/>
 a basic setup for **gulp-sass** 
 
 
